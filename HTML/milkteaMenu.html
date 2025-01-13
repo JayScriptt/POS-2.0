@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main-menu.css">
+    <title>MILKTEA MENU</title>
+</head>
+<body>
+    <div class="toggle-container">
+        <div class="toggle-switch" id="modeToggle">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </div>
+    </div>
+    <!-- BG ANIMATION -->
+    <canvas id="test"></canvas>
+    <br><br><br>
+    <div class="container-fluid row mt-5">
+        
+        <div id="logo"></div>
+        
+        <div id="main-container" class="row">
+
+            <div id="act-btn-col" class="col-2">
+                <div id="action-btn-container" class="row justify-content-evenly">
+                    <div class="container">
+                        <div class="display-date">
+                          <span id="day">day</span>,
+                          <span id="daynum">00</span>
+                          <span id="month">month</span>
+                          <span id="year">0000</span>
+                        </div>
+                        <div class="display-time"></div>
+                    </div>
+                    <div class="action-btn" id="toggle-btn"><p>SIZE</p></div>
+                    <div class="action-btn" id="void-btn"><p>VOID</p></div>
+                    <div class="action-btn" id="add-ons-btn"><p>ADD-ONS</p></div>
+                    <div class="action-btn" id="modify-btn"><p>MODIFY</p></div>
+                    <div class="action-btn" id="return-btn"><p>RETURN</p></div>
+                </div> <!-- action-btn-container - closing -->
+            </div> <!-- act-btn-col - closing -->
+        
+            <div id="menu-col" class="col-7">
+                <p class="text-center m-4 fw-bold fs-1">MILKTEA MENU</p>
+    
+                <div id="main-menu-container" class="container row justify-content-center mb-5">
+                    <div id="m1" class="choices">
+                        <p class="choiceName bg-danger text-white">
+                            W. Melon
+                        </p>
+                    </div>
+                    <div id="m2" class="choices">
+                        <p class="choiceName bg-danger text-white">
+                            Taro
+                        </p>
+                    </div>
+                    <div id="m3" class="choices">
+                        <p class="choiceName bg-danger text-white">
+                            Strawberry
+                        </p>
+                    </div>
+                    <div id="m4" class="choices">
+                        <p class="choiceName bg-danger text-white">
+                            S.Caramel
+                        </p>
+                    </div>
+                    <div id="m5" class="choices">
+                        <p class="choiceName bg-danger text-white">
+                            Red Velvet
+                        </p>
+                    </div>
+                    <div id="m6" class="choices">
+                        <p class="choiceName bg-danger text-white">
+                            Matcha
+                        </p>
+                    </div>
+                    <div id="m7" class="choices">
+                        <p class="choiceName bg-danger text-white">
+                            D. Dutch
+                        </p>
+                    </div>
+                    <div id="m8" class="choices">
+                        <p class="choiceName bg-danger text-white">
+                            D. Choco
+                        </p>
+                    </div> 
+                    <div id="m9" class="choices">
+                        <p class="choiceName bg-danger text-white">
+                            C.Hazelnut
+                        </p>
+                    </div>
+                    <div id="m10" class="choices">
+                        <p class="choiceName bg-danger text-white">
+                            C. & Cream
+                        </p>
+                    </div>
+                </div> <!-- main-menu-container - closing -->
+            </div> <!-- menu-col - closing -->
+    
+            <div id="summary-of-order-col" class="col-3 text-center">
+                <div id="receipt" class="h3 mt-5 mb-5">
+                    Orders
+                    <div id="summary-of-orders" class="h5 mt-3">
+                       <p> asdasdsad</p>
+                        <div class="h4 fw-bold">
+                            <button class="check-out-btn" role="button" id="check-out-btn-counter"><span>Checkout</span><span>Proceed to Payment</span></button>
+                            <button class="check-out-btn" role="button" id="check-out-btn-kiosk"><span>Checkout</span><span>Proceed to <br>Counter</span></button>
+                        </div>
+                    </div>
+                </div> <!-- receipt - closing -->
+            </div> <!-- summary-of-order-col - closing -->
+        </div> <!-- main container (outer) - closing -->
+    </div> <!-- container-fluid - closing -->
+    <script src="../js/script.js"></script>
+    <script src="../js/animated bg.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main-menu.css">
+    <title>CHECKOUT SECTION</title>
+</head>
+<body>
+    <div class="toggle-container">
+        <div class="toggle-switch" id="modeToggle">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </div>
+    </div>
+    <!-- BG ANIMATION -->
+    <canvas id="test"></canvas>
+    <br><br><br>
+    <div class="container-fluid row mt-5">
+        
+        <div id="logo"></div>
+        
+        <div id="main-container" class="row">
+
+            <div id="menu-col" class="col-8 border">
+                <p class="text-center m-4 fw-bold fs-1">MILKTEA MENU</p>
+    
+                    <div class="row">
+                        <div class="col-2">
+                            <button class="calcBtn" onclick="appendNumber(7)">7</button>
+                            <button class="calcBtn" onclick="appendNumber(8)">8</button>
+                            <button class="calcBtn" onclick="appendNumber(9)">9</button>
+                            <button class="calcBtn" onclick="clearDisplay()">C</button>
+                        </div>
+                    </div>
+             
+                    <div class="row">
+                        <div class="col-2">
+                            <button class="calcBtn" onclick="appendNumber(4)">4</button>
+                            <button class="calcBtn" onclick="appendNumber(5)">5</button>
+                            <button class="calcBtn" onclick="appendNumber(6)">6</button>
+                            <button class="calcBtn" onclick="applyDiscount(20)" style="background-color: red;">PWD</button> <!-- Discount Button -->
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-2">
+                            <button class="calcBtn" onclick="appendNumber(1)">1</button>
+                            <button class="calcBtn" onclick="appendNumber(2)">2</button>
+                            <button class="calcBtn" onclick="appendNumber(3)">3</button>
+                            <button class="calcBtn" onclick="showModal()"  style="background-color: red;">SC</button> <!-- Discount Button -->
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-2">
+                            <button class="calcBtn" onclick="appendNumber('.')">.</button> <!-- Dot for centavos -->
+                            <button class="calcBtn" onclick="appendNumber(0)">0</button>
+                            <button class="calcBtn" onclick="deleteLast()">⌫</button> <!-- Backspace Button -->
+                            <button class="calcBtn" onclick="processCashout()">Enter</button>
+                        </div>
+                    </div>
+
+                    </div> <!-- main-menu-container - closing -->
+    
+            <div id="summary-of-order-col" class="col-4 text-center">
+                <div id="receipt" class="border border-black h3 mt-5 mb-5">
+                    Orders
+                    <div id="summary-of-orders" class="h5 mt-3">
+                       <p> asdasdsad</p>
+                        <div class="h4 fw-bold">
+                            <button class="check-out-btn" role="button" id="check-out-btn-counter"><span>Checkout</span><span>Proceed to Payment</span></button>
+                            <button class="check-out-btn" role="button" id="check-out-btn-kiosk"><span>Checkout</span><span>Proceed to <br>Counter</span></button>
+                        </div>
+                    </div>
+                </div> <!-- receipt - closing -->
+            </div> <!-- summary-of-order-col - closing -->
+        </div> <!-- main container (outer) - closing -->
+    </div> <!-- container-fluid - closing -->
+    <script src="../js/script.js"></script>
+    <script src="../js/animated bg.js"></script>
+</body>
+</html>
+

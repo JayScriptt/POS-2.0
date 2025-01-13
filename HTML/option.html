@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        #optionContainer {
+            margin-top: 50px;
+        }
+        .station-option {
+            padding: 50px;
+            margin: 20px;
+            border-radius: 10px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        .station-option:hover {
+            transform: scale(1.05);
+            background-color: #0056b3;
+        }
+    </style>
+    <title>STATION OPTION</title>
+</head>
+<body>
+    <h1 class="mt-5 text-center fw-bold">SELECT YOUR STATION</h1>
+    <div id="optionContainer" class="container">
+        <div id="rowContainer" class="row text-center justify-content-center">
+            <div id="kiosk" class="col-12 col-md-3 bg-primary station-option">KIOSK</div>
+            <a href="./mainMenu.html" id="pos" class="col-12 col-md-3 bg-primary station-option">POS</a>
+            <div id="kvs" class="col-12 col-md-3 bg-primary station-option">KVS</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/main-menu.css">
+    <title>MAIN MENU</title>
+</head>
+<body>
+    <a class="btn fs-1"  id="burgerMenu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+        ≡
+      </a>      
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Managers Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Cashier
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Register</a></li>
+              <li><a class="dropdown-item" href="#">Login</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Product
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Disable Item</a></li>
+              <li><a class="dropdown-item" href="#">Login</a></li>
+            </ul>
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Transaction
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Refund</a></li>
+            </ul>
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Reports
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">EOD</a></li>
+              <li><a class="dropdown-item" href="#">Sales Report</a></li>
+              <li><a class="dropdown-item" href="#">Statistics</a></li>
+            </ul>
+          </div>
+        
+        </div>
+      </div>
+    </nav>
+
+    <div class="toggle-container">
+        <div class="toggle-switch" id="modeToggle" onclick="toggleTheme()">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </div>
+    </div>
+    <!-- BG ANIMATION -->
+    <canvas id="test"></canvas>
+    <br><br><br>
+    <div class="container-fluid mt-5">
+        <div id="logo" class="text-center mb-4"></div>
+        
+        <div id="main-container" class="row justify-content-center">        
+            <div id="menu-col" class="col-12 text-center">
+                <p class="m-4 fw-bold fs-1">MAIN MENU</p>
+                
+                <div id="main-menu-container" class="row justify-content-center mb-5">
+                    <a href="./milkteaMenu.html" class="col-3 mb-3">
+                        <div id="mainMenuChoice1" class="mainChoices">
+                            <p class="choiceName bg-danger text-white">MILKTEA</p>
+                        </div>
+                    </a>
+                    <a href="./fruiteaMenu.html" class="col-3 mb-3">
+                        <div id="mainMenuChoice2" class="mainChoices">
+                            <p class="choiceName bg-danger text-white">FRUIT TEA</p>
+                        </div>
+                    </a>
+                    <a href="./hotBrewMenu.html" class="col-3 mb-3">
+                        <div id="mainMenuChoice3" class="mainChoices">
+                            <p class="choiceName bg-danger text-white">HOT BREW</p>
+                        </div>
+                    </a>
+                </div> <!-- main-menu-container - closing -->
+                <div id="main-menu-container" class="row justify-content-center mb-5">
+                    <a href="./prafBrewMenu.html" class="col-3 mb-3">
+                        <div id="mainMenuChoice4" class="mainChoices">
+                            <p class="choiceName bg-danger text-white">PRAF</p>
+                        </div>
+                    </a>
+                    <a href="./icedCoffeeMenu.html" class="col-3 mb-3">
+                        <div id="mainMenuChoice5" class="mainChoices">
+                            <p class="choiceName bg-danger text-white">ICED COFFEE</p>
+                        </div>
+                    </a>
+                    <a href="./promosBrewMenu.html" class="col-3 mb-3">
+                        <div id="mainMenuChoice6" class="mainChoices">
+                            <p class="choiceName bg-danger text-white">PROMOS</p>
+                        </div>
+                    </a>
+                </div> <!-- main-menu-container - closing -->
+            </div> <!-- menu-col - closing -->
+        </div> <!-- main-container - closing -->
+    </div> <!-- container-fluid - closing -->
+    <script src="../js/script.js"></script>
+    <script src="../js/animated bg.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+            body.setAttribute('data-theme', newTheme);
+        }
+    </script>
+</body>
+</html>
